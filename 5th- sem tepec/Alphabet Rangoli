@@ -1,1 +1,5 @@
 
+def print_rangoli(size):
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+    data = [('-'.join(alpha[i:size][::-1] + alpha[i:size][1:])).center(4 * size - 3, '-') for i in range(size)]
+    print('\n'.join(data[::-1] + data[1:]))
